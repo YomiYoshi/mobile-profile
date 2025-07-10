@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Kanit'),
     home: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(image: AssetImage("assets/image/water.jpg"), 
@@ -20,14 +21,14 @@ class MyApp extends StatelessWidget {
     child: Scaffold(
           backgroundColor: Colors.transparent, // ทำให้ Scaffold มีพื้นหลังโปร่งใส
           appBar: AppBar(title: const Text("My Personal Profile",
-            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white ),), 
+            style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold, color: Colors.white ),), 
           backgroundColor: Colors.blueAccent,
           centerTitle: true,  // กำหนดให้ข้อความอยู่ตรงกลางของ AppBar
           ),
     body: Column( children: [
-           const SizedBox(height: 75), // เว้นระยะห่างด้านบน
+           const SizedBox(height: 50), // เว้นระยะห่างด้านบน
            CircleAvatar(backgroundImage: AssetImage("assets/image/profile.jpg") ,
-           radius: 110,
+           radius: 100,
           ),
           const SizedBox(height: 40), // เว้นระยะห่างระหว่างรูปโปรไฟล์และข้อความ
           const ListTile(
